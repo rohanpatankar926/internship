@@ -19,12 +19,12 @@ def train_test_split_(config_path):
     train,test=train_test_split(data,test_size=split_ratio,random_state=random_state)
     train.to_csv(train_data,sep=",",index=False,encoding="UTF-8")
     test.to_csv(test_data,sep=",",index=False,encoding="UTF-8")
-    # train_data=pd.read_csv(train_data)
-    # print(train_data)
-    # test_data=pd.read_csv(test_data)
-    # print(test_data)
-    # print(test_data.shape)
-    # print(train_data.shape)
+    train_data=pd.read_csv(train_data)
+    print(train_data)
+    test_data=pd.read_csv(test_data)
+    print(test_data)
+    print(test_data.shape)
+    print(train_data.shape)
     
 if __name__=="__main__":
     args=argparse.ArgumentParser()

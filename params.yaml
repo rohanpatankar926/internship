@@ -20,7 +20,6 @@ estimators:
   LinearRegression:
     fit_intercept: True
     normalize: deprecated 
-    copy_X: True 
     n_jobs: None 
     positive: False
 
