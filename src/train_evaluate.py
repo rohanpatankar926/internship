@@ -1,9 +1,12 @@
+
 import numpy as np
 from sklearn.metrics import mean_absolute_error,r2_score,mean_squared_error
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import GradientBoostingRegressor
 from urllib.parse import urlparse
 import pandas as pd
 import argparse
+
+from sklearn.model_selection import learning_curve
 from get_data import read_params
 import joblib
 import json
@@ -20,12 +23,8 @@ def model_eval(config_path):
     test_data=config["split_data"]["test_path"]
     train_data=config["split_data"]["train_path"]
     model_dir=config["model_dirs"]
-    fit_intercept=config["estimators"]["LinearRegression"]["fit_intercept"]
-    normalize=config["estimators"]["LinearRegression"]["normalize"]
-    n_jobs=config["estimators"]["LinearRegression"]["n_jobs"]
-    positive=config["estimators"]["LinearRegression"]["positive"]
-    target_col=config["base"]["target_data"]
     
+    target_col=config["base"]["target_data"]
     train=pd.read_csv(train_data,sep=",")
     test=pd.read_csv(test_data,sep=",")
     
@@ -33,9 +32,9 @@ def model_eval(config_path):
     
     y_train,y_test=train[target_col],test[target_col]
     
-    lr=LinearRegression(fit_intercept=fit_intercept,normalize=normalize,n_jobs=n_jobs,positive=positive)
-    lr.fit(x_train,y_train)
-    y_pred=lr.predict(x_test)
+    GB=GradientBoostingRegressor()
+    GB.fit(x_train,y_train)
+    y_pred=GB.predict(x_test)
     
     (rmse,mae,r2,mse)=eval_metrics(y_test,y_pred)
     print(rmse,mae,r2,mse)

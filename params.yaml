@@ -18,7 +18,7 @@ split_data:
 
 estimators: 
   GradientBoostingRegressor:
-  - loss: ls,
+  - loss: ls
   - learning_rate: 0.1
   - n_estimators: 100
   - subsample: 1.0
