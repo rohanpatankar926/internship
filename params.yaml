@@ -1,0 +1,27 @@
+base:
+  project: insurance-price-prediction
+  random_state: 180
+  target_data: expenses
+
+data_source: 
+  local_data: data_given/insurance_updated.csv
+
+load_data: 
+  raw_data_csv: data/raw/insurance_updated.csv
+
+split_data:
+  train_path: data/processed/train_insurance.csv
+  test_path: data/processed/test_insurance.csv
+  test_size: 0.25
+
+
+
+estimators: 
+  LinearRegression:
+    fit_intercept: True
+    normalize: deprecated 
+    copy_X: True 
+    n_jobs: None 
+    positive: False
+
+model_dirs: saved_models
