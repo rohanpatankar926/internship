@@ -80,7 +80,7 @@ C:.
 ```
 step 4:
 Inside the ```params.yaml``` file understand it and append the code i have written <br>
-also same for ```dvc.yaml```<br>
+Also same for ```dvc.yaml```<br>
 These 2 are the brain and heart for this mlops dvc project<br>
 
 step 5:<br> 
@@ -92,7 +92,7 @@ The main objective for making this file is to get track of params.yaml file and 
 step 6:<br>
 After step 5 open up vscode or pycharm terminal<br>
 Follow these commands<br>
-1.```pip install -r requirements.txt```<br><
+1.```pip install -r requirements.txt```<br>
 2.```git init```<br>
 3.```dvc init```<br>
 4.```dvc add data_given/csv_file_name.csv```<br>
