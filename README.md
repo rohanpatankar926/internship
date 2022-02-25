@@ -79,48 +79,48 @@ C:.
             get_data.cpython-37.pyc
 ```
 step 4:
-Inside the ```params.yaml``` file understand it and append the code i have written 
-also same for ```dvc.yaml```
-These 2 are the brain and heart for this mlops dvc project
+Inside the ```params.yaml``` file understand it and append the code i have written <br>
+also same for ```dvc.yaml```<br>
+These 2 are the brain and heart for this mlops dvc project<br>
 
-step 5: 
-Inside the ```src``` dir create ```get_data.py```
-OR
-```touch src/get_data.py```
-The main objective for making this file is to get track of params.yaml file and to read the data present in our local system.If you want to read data from s3 bucket or azure you can also customize the code and fetch the data
+step 5:<br> 
+Inside the ```src``` dir create ```get_data.py```<br>
+OR<br>
+```touch src/get_data.py```<br>
+The main objective for making this file is to get track of params.yaml file and to read the data present in our local system.If you want to read data from s3 bucket or azure you can also customize the code and fetch the data<br>
 
-step 6:
-After step 5 open up vscode or pycharm terminal
-Follow these commands
-1.```pip install -r requirements.txt```
-2.```git init```
-3.```dvc init```
-4.```dvc add data_given/csv_file_name.csv```
-5.```git add .```
-6.```git commit -m "committed"```
-7.```git remote add origin git repo https address```
-8.```git branch -M main```
-9.```git push origin main```
+step 6:<br>
+After step 5 open up vscode or pycharm terminal<br>
+Follow these commands<br>
+1.```pip install -r requirements.txt```<br><
+2.```git init```<br>
+3.```dvc init```<br>
+4.```dvc add data_given/csv_file_name.csv```<br>
+5.```git add .```<br>
+6.```git commit -m "committed"```<br>
+7.```git remote add origin git repo https address```<br>
+8.```git branch -M main```<br>
+9.```git push origin main```<br>
 
-step 7:
-Inside the ```src``` dir create ```load_data.py``` file
-OR
-```touch src/load_data.py```
-The main objective for this file is we will write a ```function``` which will fetch ```.csv``` file and append to ```raw``` data folder.
+step 7:<br>
+Inside the ```src``` dir create ```load_data.py``` file<br>
+OR<br>
+```touch src/load_data.py```<br>
+The main objective for this file is we will write a ```function``` which will fetch ```.csv``` file and append to ```raw``` data folder.<br>
 
-step8 :
-Inside the ```src``` dir create ```split_data.py```
-OR 
-```touch src/split_data.py``
-The main objective for this file by the ```sklearn``` library we will divide the data into ```75:25``` ratio and then append to ```processed``` folder
+step8 :<br>
+Inside the ```src``` dir create ```split_data.py```<br>
+OR <br>
+```touch src/split_data.py```<br>
+The main objective for this file by the ```sklearn``` library we will divide the data into ```75:25``` ratio and then append to ```processed``` folder <br>
 
-step9 :
-Inside the ```src``` dir create ```train_evaluate.py```
-OR
-```touch src/train_evaluate.py```
-This is the favorite step for all data science enthusiasts we will train and evaluate the model here
+step9 :<br>
+Inside the ```src``` dir create ```train_evaluate.py```<br>
+OR<br>
+```touch src/train_evaluate.py```<br>
+This is the favorite step for all data science enthusiasts we will train and evaluate the model here.<br>
 
-step 10:
-IN PROGRESS BE PATIENT....
+step 10:<br>
+IN PROGRESS BE PATIENT....<br>
 
 
