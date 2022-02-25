@@ -1,0 +1,9 @@
+stages: #stages of dvc
+  load_data: #specifying path running 
+    cmd: python src/load_data.py --config=params.yaml #main .py path
+    deps: #dependencis
+    - src/get_data.py #location
+    - src/load_data.py #location
+    - data_given/insurance_updated.csv #root data location
+    outs: #outcomes after running this code
+    - data/raw/insurance_updated.csv
