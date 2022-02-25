@@ -1,6 +1,6 @@
 step1 :
 ``` bash
-conda create -n filename pytho=3.7
+conda create -n filename python=3.7
 ```
 
 step2 :
