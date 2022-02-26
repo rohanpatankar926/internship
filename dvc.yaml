@@ -7,3 +7,33 @@ stages: #stages of dvc
     - data_given/insurance_updated.csv #root data location
     outs: #outcomes after running this code
     - data/raw/insurance_updated.csv
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - src/split_data.py
+    - data/raw/insurance_updated.csv
+    outs:
+    - data/processed/train_insurance.csv
+    - data/processed/test_insurance.csv 
+  train_evaluate:
+    cmd: python src/train_evaluate.py --config=params.yaml
+    deps:
+    - data/processed/train_insurance.csv
+    - data/processed/test_insurance.csv 
+    - src/train_evaluate.py 
+    
+    params:
+    - estimators.GradientBoostingRegressor.params.learning_rate
+    - estimators.GradientBoostingRegressor.params.n_estimators
+    - estimators.GradientBoostingRegressor.params.alpha
+    - estimators.GradientBoostingRegressor.params.verbose
+    - estimators.GradientBoostingRegressor.params.validation_fraction
+    - estimators.GradientBoostingRegressor.params.tol
+    - estimators.GradientBoostingRegressor.params.ccp_alpha
+    metrics:
+    - reports/scores.json:
+        cache: false
+    - reports/params.json:
+        cache: false
+    outs:
+    - saved_models/model.joblib
