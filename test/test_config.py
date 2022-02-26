@@ -13,3 +13,8 @@ def test_fuct():
     with pytest.raises(NotInRange):
         if a not in range(10,20):
             raise NotInRange
+        
+def test_generic():
+    a=2
+    b=2
+    assert a==b
