@@ -25,7 +25,7 @@ estimators:
       verbose: 0
       validation_fraction: 0.000001
       tol: 0.0001
-      ccp_alpha: 0.0
+      ccp_alpha: 0.1
 
 reports:
   scores: reports/scores.json

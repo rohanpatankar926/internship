@@ -1,0 +1,57 @@
+action: GLOB, msg: packaging
+cwd: C:\Users\U\Desktop\internship project
+cmd: 'C:\Users\U\anaconda3\envs\project\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
+running sdist
+running egg_info
+writing src.egg-info\PKG-INFO
+writing dependency_links to src.egg-info\dependency_links.txt
+writing top-level names to src.egg-info\top_level.txt
+reading manifest file 'src.egg-info\SOURCES.txt'
+writing manifest file 'src.egg-info\SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+
+creating src-1.0
+creating src-1.0\src
+creating src-1.0\src.egg-info
+creating src-1.0\test
+copying files to src-1.0...
+copying README.md -> src-1.0
+copying setup.py -> src-1.0
+copying src\__init__.py -> src-1.0\src
+copying src\get_data.py -> src-1.0\src
+copying src\load_data.py -> src-1.0\src
+copying src\split_data.py -> src-1.0\src
+copying src\train_evaluate.py -> src-1.0\src
+copying src.egg-info\PKG-INFO -> src-1.0\src.egg-info
+copying src.egg-info\SOURCES.txt -> src-1.0\src.egg-info
+copying src.egg-info\dependency_links.txt -> src-1.0\src.egg-info
+copying src.egg-info\top_level.txt -> src-1.0\src.egg-info
+copying test\__init__.py -> src-1.0\test
+copying test\conftest.py -> src-1.0\test
+copying test\test_config.py -> src-1.0\test
+Writing src-1.0\setup.cfg
+creating '.tox\dist\src-1.0.zip' and adding 'src-1.0' to it
+adding 'src-1.0'
+adding 'src-1.0\src'
+adding 'src-1.0\src.egg-info'
+adding 'src-1.0\test'
+adding 'src-1.0\PKG-INFO'
+adding 'src-1.0\README.md'
+adding 'src-1.0\setup.cfg'
+adding 'src-1.0\setup.py'
+adding 'src-1.0\src\get_data.py'
+adding 'src-1.0\src\load_data.py'
+adding 'src-1.0\src\split_data.py'
+adding 'src-1.0\src\train_evaluate.py'
+adding 'src-1.0\src\__init__.py'
+adding 'src-1.0\src.egg-info\dependency_links.txt'
+adding 'src-1.0\src.egg-info\PKG-INFO'
+adding 'src-1.0\src.egg-info\SOURCES.txt'
+adding 'src-1.0\src.egg-info\top_level.txt'
+adding 'src-1.0\test\conftest.py'
+adding 'src-1.0\test\test_config.py'
+adding 'src-1.0\test\__init__.py'
+removing 'src-1.0' (and everything under it)
