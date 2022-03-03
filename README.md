@@ -7,77 +7,8 @@ step2 :
 
 Create ```template.py``` file and schema to it as shown below
 
-```
-C:.
-│   .dvcignore
-│   .gitignore
-│   dvc.lock
-│   dvc.yaml
-│   params.yaml
-│   README.md
-│   requirements.txt
-│   template.py
-│
-├───.dist
-├───.dvc
-│   │   .gitignore
-│   │   config
-│   │
-│   ├───cache
-│   │   ├───d0
-│   │   │       5e1ef49a0942b9cc633ffd353a4290
-│   │   │
-│   │   ├───fb
-│   │   │       6ae626d107130aee686992d93a5347
-│   │   │
-│   │   └───runs
-│   │       └───ed
-│   │           └───ed03693f864fdce4c92bdab0c22b27b17b4067fb2e632dce435b5e502ca62162
-│   │                   59a9ac9752a6f94613bde2e584f4910ae77178bbf44da9566cda9baa1da76363
-│   │
-│   └───tmp
-│       │   lock
-│       │   rwlock
-│       │
-│       ├───links
-│       │       cache.db
-│       │
-│       └───md5s
-│               cache.db
-│
-├───data
-│   ├───processed
-│   │       .gitkeep
-│   │       test_insurance.csv
-│   │       train_insurance.csv
-│   │
-│   └───raw
-│           .gitignore
-│           .gitkeep
-│           insurance_updated.csv
-│
-├───data_given
-│       .gitignore
-│       insurance_updated.csv
-│       insurance_updated.csv.dvc
-│
-├───notebooks files
-│       .gitkeep
-│
-├───saved_models
-│       .gitkeep
-│
-└───src
-    │   .gitkeep
-    │   get_data.py
-    │   load_data.py
-    │   split_data.py
-    │   train_evaluate.py
-    │   __init__.py
-    │
-    └───__pycache__
-            get_data.cpython-37.pyc
-```
+
+
 step 4:
 Inside the ```params.yaml``` file understand it and append the code i have written <br>
 Also same for ```dvc.yaml```<br>
