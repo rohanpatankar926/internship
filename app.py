@@ -44,7 +44,7 @@ def api_response(request):
         error={"something went wrong try again!!"}
         return error
 
-data1=pd.read_csv("data_given\insurance_updated.csv")
+data1=pd.read_csv("insurance_data\insurance.csv")
 
 logging.info("csv read successful")
 
@@ -62,10 +62,26 @@ def index():
                 # return render_template("index.html",response=response)
                 age=int(request.form.get("age"))
                 sex=(request.form.get("sex"))
+                if(sex=="female"):
+                    sex=0
+                else:
+                    sex=1
                 bmi=float(request.form.get("bmi"))
                 children=request.form.get("children")
                 smoker=request.form.get("smoker")
+                if(smoker=="no"):
+                     smoker=0
+                else:
+                    smoker=1
                 region=request.form.get("region")
+                if region=="northeast":
+                    region=0
+                elif region=="northwest":
+                    region=1
+                elif region=="southeast":
+                    region=2
+                else:
+                    region=3
                 response=predict(pd.DataFrame([[age, sex, bmi, children, smoker, region]], columns=['age', 'sex', 'bmi', 'children', 'smoker', 'region']))
                 return render_template("index.html",response=str(response[0]))
             elif request.json:
