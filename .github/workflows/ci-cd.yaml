@@ -35,12 +35,12 @@ jobs:
     - name: Test with pytest
       run: |
         pytest -v
-    - name: Deploy to Heroku
-      env:
-        HEROKU_API_TOKEN: e942f08b-4a78-4c75-a12b-9dd90e7f307a
+    # - name: Deploy to Heroku
+    #   env:
+    #     HEROKU_API_TOKEN: e942f08b-4a78-4c75-a12b-9dd90e7f307a
 
-        HEROKU_APP_NAME: insurance---pred
-      if: github.ref == 'refs/heads/main' && job.status == 'success'
-      run: |
-        git remote add heroku https://heroku:$HEROKU_API_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
-        git push heroku HEAD:main -f
+    #     HEROKU_APP_NAME: insurance---pred
+    #   if: github.ref == 'refs/heads/main' && job.status == 'success'
+    #   run: |
+    #     git remote add heroku https://heroku:$HEROKU_API_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
+    #     git push heroku HEAD:main -f
