@@ -6,7 +6,7 @@ base:
 data_source: 
   local_data: data_given/insurance_updated.csv
 
-load_data: 
+load_data:
   raw_data_csv: data/raw/insurance_updated.csv
 
 split_data:
@@ -32,8 +32,5 @@ reports:
   params: reports/params.json
 
 webapp_model_dir: prediction_service/model/model.joblib
-
-
-
 
 model_dirs: saved_models
