@@ -7,6 +7,7 @@ import numpy as np
 import yaml
 import pandas as pd
 import logging
+
 logging.basicConfig(format='%(message)s',level=logging.INFO)
 
 params_path="params.yaml"
@@ -17,6 +18,10 @@ template_dir=os.path.join(webapp_root,"templates")
 logging.info("folder linking successful")
 
 app=Flask(__name__,static_folder=static_dir,template_folder=template_dir)
+
+# port=5000
+# app_server = gevent.pywsgi.WSGIServer(('', port), app)
+# app_server.serve_forever()
 
 def read_params(config_path):
     with open(config_path) as yaml_file:
