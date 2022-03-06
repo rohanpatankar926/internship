@@ -44,7 +44,7 @@ def api_response(request):
         error={"something went wrong try again!!"}
         return error
 
-data1=pd.read_csv("data_given\insurance.csv")
+data1=pd.read_csv("insurance_data\insurance.csv")
 
 logging.info("csv read successful")
 
