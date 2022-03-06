@@ -1,3 +1,4 @@
+from distutils.command.config import config
 from urllib import response
 from flask import Flask,render_template,jsonify,request
 import os
@@ -44,7 +45,11 @@ def api_response(request):
         error={"something went wrong try again!!"}
         return error
 
-data1=pd.read_csv("insurance_data\insurance.csv")
+config=read_params(params_path)
+raw_data=config["raw_data"]["raw"]
+data1=pd.read_csv(raw_data)
+print(data1.head())
+
 
 logging.info("csv read successful")
 

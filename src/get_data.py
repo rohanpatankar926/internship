@@ -1,5 +1,6 @@
 #The main objective for this code is it will read params.yaml process it and return to a dataframe
 
+
 import os #handling file 
 import argparse #for argument parsing
 import yaml #yaml file calling
@@ -14,8 +15,10 @@ def get_data(config_path):
     config=read_params(config_path)
     print(config)
     data_path=config["data_source"]["local_data"]
+    raw_path=config["raw_data"]["raw"]
     data=pd.read_csv(data_path,sep=",")
-    print(data.head())
+    raw_data=pd.read_csv(raw_path,sep=",")
+    print(raw_data.head())
     return data
 
 

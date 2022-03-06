@@ -9,6 +9,9 @@ data_source:
 load_data:
   raw_data_csv: data/raw/insurance_updated.csv
 
+raw_data:
+  raw: insurance_data/insurance.csv
+
 split_data:
   train_path: data/processed/train_insurance.csv
   test_path: data/processed/test_insurance.csv
