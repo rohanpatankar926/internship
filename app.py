@@ -58,7 +58,7 @@ print(data1.head())
 
 logging.info("csv read successful")
 
-@app.route("/",methods=["POST"])
+@app.route("/",methods=["GET","POST"])
 def index():
     sex=sorted(data1["sex"].unique())
     smoker=sorted(data1["smoker"].unique())
@@ -103,7 +103,9 @@ def index():
             error = {"error":e}
             return render_template("404.html", error=error)
     
-    return render_template("index.html",sex=sex,smoker=smoker,region=region)
+    else:
+        
+        return render_template("index.html",sex=sex,smoker=smoker,region=region)
 
 logging.info("application running succesfully")
 if __name__=="__main__":
