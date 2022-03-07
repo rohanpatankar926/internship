@@ -58,7 +58,7 @@ print(data1.head())
 
 logging.info("csv read successful")
 
-@app.route("/",methods=["GET","POST"])
+@app.route("/",methods=["POST"])
 def index():
     sex=sorted(data1["sex"].unique())
     smoker=sorted(data1["smoker"].unique())
