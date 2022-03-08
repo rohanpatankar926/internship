@@ -48,18 +48,18 @@ stages:
       params.yaml:
         estimators.GradientBoostingRegressor.params.alpha: 0.99
         estimators.GradientBoostingRegressor.params.ccp_alpha: 0.1
-        estimators.GradientBoostingRegressor.params.learning_rate: 0.1
+        estimators.GradientBoostingRegressor.params.learning_rate: 0.1001
         estimators.GradientBoostingRegressor.params.n_estimators: 100
         estimators.GradientBoostingRegressor.params.tol: 0.0001
         estimators.GradientBoostingRegressor.params.validation_fraction: 1e-06
         estimators.GradientBoostingRegressor.params.verbose: 0
     outs:
     - path: reports/params.json
-      md5: cacda569674b00b6e76431522d81d7da
-      size: 147
+      md5: 1bb950cb0b786b544047a929a4026b1d
+      size: 150
     - path: reports/scores.json
-      md5: 7772993bfb0a6ce817d88c26d595aa77
+      md5: a46afdc23098012265e2b6eb20900b0a
       size: 149
     - path: saved_models/model.joblib
-      md5: 6e65a9f0b474dfb5b8ec3ce1e980f9d3
-      size: 173594
+      md5: 5a086d0025ce612a20c48822123eb948
+      size: 173290

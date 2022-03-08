@@ -24,6 +24,7 @@ def model_eval(config_path):
     test_data=config["split_data"]["test_path"]
     train_data=config["split_data"]["train_path"]
     model_dir=config["model_dirs"]
+   
     
     target_col=config["base"]["target_data"]
     train=pd.read_csv(train_data,sep=",")

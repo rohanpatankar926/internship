@@ -53,7 +53,7 @@ def api_response(request):
 config=read_params(params_path)
 raw_data=config["raw_data"]["raw"]
 data1=pd.read_csv(raw_data)
-print(data1.head())
+# print(data1.head())
 
 
 logging.info("csv read successful")
@@ -92,7 +92,10 @@ def index():
                     region=2
                 else:
                     region=3
+                # data=dict(request.form)
+                # data=[list(map(float,data))]
                 response=predict(pd.DataFrame([[age, sex, bmi, children, smoker, region]], columns=['age', 'sex', 'bmi', 'children', 'smoker', 'region']))
+                # response=predict(data)
                 return render_template("index.html",response=str(response[0]))
             elif request.json:
                 response=api_response(request)
@@ -104,7 +107,6 @@ def index():
             return render_template("404.html", error=error)
     
     else:
-        
         return render_template("index.html",sex=sex,smoker=smoker,region=region)
 
 logging.info("application running succesfully")
