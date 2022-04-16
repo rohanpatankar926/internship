@@ -110,5 +110,6 @@ def index():
         return render_template("index.html",sex=sex,smoker=smoker,region=region)
 
 logging.info("application running succesfully")
+port = int(os.environ.get('PORT', 5000))
 if __name__=="__main__":
-    app.run(port=5000,debug=False)
+    app.run(port=port,debug=False)
