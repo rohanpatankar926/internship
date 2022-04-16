@@ -38,4 +38,4 @@ stages: #stages of dvc
     - reports/params.json:
         cache: false
     outs:
-    - saved_models/model.joblib
+    - saved_models/model.pkl

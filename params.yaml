@@ -36,6 +36,6 @@ reports:
   scores: reports/scores.json
   params: reports/params.json
 
-webapp_model_dir: prediction_service/model/model.joblib
+webapp_model_dir: prediction_service/model/model.pkl
 
 

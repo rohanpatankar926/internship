@@ -51,7 +51,7 @@ def model_eval(config_path):
     print(f"normalized rmse::{normalized_rmse}")
     
     os.makedirs(model_dir,exist_ok=True)
-    model_path=os.path.join(model_dir,"model.joblib")
+    model_path=os.path.join(model_dir,"model.pkl")
     
     joblib.dump(GB,model_path)
     
