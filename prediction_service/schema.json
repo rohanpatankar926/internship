@@ -1,0 +1,14 @@
+{
+    "age":
+    {"min":18.0,"max":64.0},
+    "sex":
+    {"min":0.0,"max":1.0},
+    "bmi":
+    {"min":16.0,"max":65.1},
+    "children":
+    {"min":0.0,"max":5.0},
+    "smoker":
+    {"min":0.0,"max":1.0},
+    "region":
+    {"min":0.0,"max":1.0}
+}
