@@ -1,1 +1,2 @@
-web: gunicorn app:app 
+entrypoint: gunicorn -b:5000 app:app
+
