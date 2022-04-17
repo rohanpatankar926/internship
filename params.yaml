@@ -24,7 +24,7 @@ estimators:
     params:
       learning_rate: 0.1001
       n_estimators: 100
-      alpha: 0.99
+      alpha: 0.8
       verbose: 0
       validation_fraction: 0.000001
       tol: 0.0001

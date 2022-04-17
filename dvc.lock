@@ -46,7 +46,7 @@ stages:
       size: 3218
     params:
       params.yaml:
-        estimators.GradientBoostingRegressor.params.alpha: 0.99
+        estimators.GradientBoostingRegressor.params.alpha: 0.8
         estimators.GradientBoostingRegressor.params.ccp_alpha: 0.1
         estimators.GradientBoostingRegressor.params.learning_rate: 0.1001
         estimators.GradientBoostingRegressor.params.n_estimators: 100
@@ -58,8 +58,8 @@ stages:
       md5: 1bb950cb0b786b544047a929a4026b1d
       size: 150
     - path: reports/scores.json
-      md5: a4258de2683d530c68d372fade651027
+      md5: 084a3c4a8f3aa93cb8fa631728f13f50
       size: 147
     - path: saved_models/model.pkl
-      md5: a26359543fe43c07ec03d26ee31545d0
-      size: 173513
+      md5: 1626f745ea0305554e861dbf85793ffb
+      size: 173555
