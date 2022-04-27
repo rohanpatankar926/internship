@@ -8,14 +8,16 @@ import yaml
 import pandas as pd
 import logging
 # from gevent.pywsgi import WSGIServer
-logging.basicConfig(format='%(message)s',level=logging.INFO)
+logging.basicConfig(filename="deployment_logs.logs", format='%(asctime)s %(message)s',level=logging.INFO)
 
 params_path="params.yaml"
+logging.info("params.yaml loaded successfully")
 webapp_root="webapp"
-static_dir=os.path.join(webapp_root,"static")
-template_dir=os.path.join(webapp_root,"templates")
 
-logging.info("folder linking successful")
+static_dir=os.path.join(webapp_root,"static")
+logging.info("staticdir linked successfully")
+template_dir=os.path.join(webapp_root,"templates")
+logging.info("template_dir linking successful")
 
 app=Flask(__name__,static_folder=static_dir,template_folder=template_dir)
 
@@ -24,19 +26,24 @@ app=Flask(__name__,static_folder=static_dir,template_folder=template_dir)
 # app_server.serve_forever()
 
 def read_params(config_path):
-    with open(config_path) as yaml_file:
-        config=yaml.safe_load(yaml_file)
-    return config
+    try:
+        with open(config_path) as yaml_file:
+            config=yaml.safe_load(yaml_file)
+        return config
+    except Exception as e:
+        logging.info("The following error message is :",str())
 
-logging.info("parmas.yaml read successful...")
 
 def predict(data):
-    config=read_params(params_path)
-    model_dir_path=config["webapp_model_dir"]
-    model=joblib.load(model_dir_path)
-    prediction=model.predict(data)
-    print(prediction)
-    return prediction
+    try:
+        config=read_params(params_path)
+        model_dir_path=config["webapp_model_dir"]
+        model=joblib.load(model_dir_path)
+        prediction=model.predict(data)
+        print(prediction)
+        return prediction
+    except Exception as e:
+        logging.info("the following file has an error",str(e))
 
 
 def api_response(request):
