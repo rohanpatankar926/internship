@@ -1,6 +1,6 @@
-### INSURANCE PREMIUM PREDICTION USING MLOPS
+## INSURANCE PREMIUM PREDICTION USING MLOPS
 
-DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/
+DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/<br>
 FOR DOCUMENTATION OF THIS PROJECT VISIT HERE:(DOCS)[https://github.com/rohanpatankar926/internship_project/tree/main/docs]
 ##### STEPS ARE MENTIONED BELOW FOR MAKING THE ENTIRE PIPELINE
 step1 :
@@ -135,6 +135,6 @@ For automation of the project create dir `.github\workflow\ci-cd.yaml` we used h
 All set now you cloned this project successfully
 
 Author:Rohan patankar
-For any queries related to ml/dl contact me (gmail)[rohanpatankar926@gmail.com]
+For any queries related to ml/dl contact me (gmail)["rohanpatankar926@gmail.com"]
 
 #### Thank You
