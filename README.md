@@ -139,6 +139,8 @@ For automation of the project create dir `.github\workflow\ci-cd.yaml` we used h
 All set now you cloned this project successfully
 <br>
 Author:Rohan patankar<br>
+<br>
 For any queries related to ml/dl contact me <a href="rohanpatankar926@gmail.com">GMAIL</a>
+<br>
 <br>
 ### Thank You
