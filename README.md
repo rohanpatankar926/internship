@@ -1,8 +1,10 @@
 ## INSURANCE PREMIUM PREDICTION USING MLOPS
 
-DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/<br>
+DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/<br>'
+<br>
 FOR DOCUMENTATION OF THIS PROJECT VISIT HERE:[DOCS](https://github.com/rohanpatankar926/internship_project/tree/main/docs)
-##### STEPS ARE MENTIONED BELOW FOR MAKING THE ENTIRE PIPELINE
+<br>
+### STEPS ARE MENTIONED BELOW FOR MAKING THE ENTIRE PIPELINE
 step1 :
 ``` bash
 conda create -n filename python=3.7
@@ -127,7 +129,7 @@ step 20:
 For automation of the project create dir `.github\workflow\ci-cd.yaml` we used here github actions for automating our project 
 
 
-##### Cloning this project 
+### Cloning this project 
 `git clone https://github.com/rohanpatankar926/internship_project.git`<br>
 `cd project directory`
 `pip install -r requirements.txt`
@@ -137,4 +139,4 @@ All set now you cloned this project successfully
 Author:Rohan patankar
 For any queries related to ml/dl contact me [gmail](rohanpatankar926@gmail.com)
 
-#### Thank You
+### Thank You
