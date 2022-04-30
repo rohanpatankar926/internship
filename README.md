@@ -2,7 +2,7 @@
 
 This is my machine learning internship from ineuron.ai where i built complete end to end ml pipeline usin dvc-git pipeline.
 
-DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/<br>'
+DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/<br>
 <br>
 FOR DOCUMENTATION OF THIS PROJECT VISIT HERE:[DOCS](https://github.com/rohanpatankar926/internship_project/tree/main/docs)
 <br>
@@ -139,6 +139,6 @@ For automation of the project create dir `.github\workflow\ci-cd.yaml` we used h
 All set now you cloned this project successfully
 <br>
 Author:Rohan patankar
-For any queries related to ml/dl contact me [gmail](rohanpatankar926@gmail.com)
+For any queries related to ml/dl contact me <a href="rohanpatankar926@gmail.com">GMAIL</a>
 
 ### Thank You
