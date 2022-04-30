@@ -1,5 +1,7 @@
 ## INSURANCE PREMIUM PREDICTION USING MLOPS
 
+This is my machine learning internship from ineuron.ai where i built complete end to end ml pipeline usin dvc-git pipeline.
+
 DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/<br>'
 <br>
 FOR DOCUMENTATION OF THIS PROJECT VISIT HERE:[DOCS](https://github.com/rohanpatankar926/internship_project/tree/main/docs)
@@ -133,9 +135,9 @@ For automation of the project create dir `.github\workflow\ci-cd.yaml` we used h
 `git clone https://github.com/rohanpatankar926/internship_project.git`<br>
 `cd project directory`
 `pip install -r requirements.txt`
-`python app.py`
+`python app.py`<br>
 All set now you cloned this project successfully
-
+<br>
 Author:Rohan patankar
 For any queries related to ml/dl contact me [gmail](rohanpatankar926@gmail.com)
 
