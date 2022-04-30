@@ -138,9 +138,8 @@ For automation of the project create dir `.github\workflow\ci-cd.yaml` we used h
 `python app.py`<br>
 All set now you cloned this project successfully
 <br>
-Author:Rohan patankar<br>
+Author:Rohan patankar
 <br>
-For any queries related to ml/dl contact me <a href="mailto:rohanpatankar926@gmail.com">GMAIL</a>
-<br>
+For any queries related to ml/dl contact me <a href="mailto: rohanpatankar926@gmail.com">GMAIL</a>
 <br>
 ### Thank You
