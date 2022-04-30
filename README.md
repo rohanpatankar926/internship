@@ -15,8 +15,6 @@ Gradient Boosting, Decision tree, Regression
 We have to build a solution that should able to predict the premium of the
 personal for health insurance
 
-This is my machine learning internship from ineuron.ai where i built complete end to end ml pipeline usin dvc-git pipeline.
-
 DEPLOYED APPLICATION LINK:https://mlops-application.herokuapp.com/<br>
 <br>
 FOR DOCUMENTATION OF THIS PROJECT VISIT HERE:[DOCS](https://github.com/rohanpatankar926/internship_project/tree/main/docs)
