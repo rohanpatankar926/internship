@@ -140,6 +140,6 @@ All set now you cloned this project successfully
 <br>
 Author:Rohan patankar
 <br>
-For any queries related to ml/dl contact me <a href="mailto:rohanpatankar926@gmail.com?subject = Feedback&body = Message">GMAIL</a>
+For any queries related to ml/dl contact me <a href="mailto:rohanpatankar926@gmail.com?subject = Feedback&body = Message">rohanpatankar926@gmail.com</a>
 <br>
 ### Thank You
