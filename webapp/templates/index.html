@@ -81,7 +81,7 @@ Insurance Premium Detection
                 id="sex"
                 name="sex"
                 required="1"
-              >
+              > <option value="None">Sex</option>
                 {% for type in sex %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
@@ -106,8 +106,8 @@ Insurance Premium Detection
                 class="form-control"
                 id="smoker"
                 name="smoker"
-                required="1"
-              >
+                required="1"> 
+                <option value="None">Smoking</option>
                 {% for type in smoker %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
@@ -119,7 +119,7 @@ Insurance Premium Detection
                 id="region"
                 name="region"
                 required="1"
-              >
+              > <option value="None">Region</option>
                 {% for type in region %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
