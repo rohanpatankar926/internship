@@ -77,19 +77,24 @@ def index():
                 # data=[list(map(float,data))]
                 # response=predict(data)
                 # return render_template("index.html",response=response)
+                error={"error":"Please Select the correct dropdown value"}
                 age=int(request.form.get("age"))
                 sex=(request.form.get("sex"))
                 if(sex=="female"):
                     sex=0
-                else:
+                elif(sex=="male"):
                     sex=1
+                else:
+                    return render_template("404.html",error=error)
                 bmi=float(request.form.get("bmi"))
                 children=request.form.get("children")
                 smoker=request.form.get("smoker")
                 if(smoker=="no"):
                      smoker=0
-                else:
+                elif smoker=="yes":
                     smoker=1
+                else:
+                    return render_template("404.html",error=error)
                 region=request.form.get("region")
                 if region=="northeast":
                     region=0
@@ -97,8 +102,10 @@ def index():
                     region=1
                 elif region=="southeast":
                     region=2
-                else:
+                elif region=="southwest":
                     region=3
+                else:
+                    return render_template("404.html",error=error)
                 # data=dict(request.form)
                 # data=[list(map(float,data))]
                 response=predict(pd.DataFrame([[age, sex, bmi, children, smoker, region]], columns=['age', 'sex', 'bmi', 'children', 'smoker', 'region']))
@@ -119,4 +126,4 @@ def index():
 logging.info("application running succesfully")
 
 if __name__=="__main__":
-    app.run(port=5000,debug=False)
+    app.run(port=5000,debug=True)
