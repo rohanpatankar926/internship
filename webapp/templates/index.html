@@ -18,7 +18,7 @@ Insurance Premium Detection
   class="navbar navbar-expand-lg navbar-light shadow fixed-top"
   style="background-color: #80bde9"
 >
-  <a class="navbar-brand" href="/">Insurance Premium Prediction</a>
+  <a class="navbar-brand" href="/">Insurance Price Prediction</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -38,12 +38,14 @@ Insurance Premium Detection
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://github.com/rohanpatankar926/internship_project/"
-          >source code</a>
-      </li>
+        <a class="nav-link" href="https://github.com/rohanpatankar926/intenship_project"
+          >source code</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://github.com/rohanpatankar926/internship_project/tree/main/docs">Docs</a>
+        <a class="nav-link" href="https://github.com/rohanpatankar926/intenship_project/Docs"
+          >source code</a
+        >
       </li>
     </ul>
   </div>
@@ -72,54 +74,57 @@ Insurance Premium Detection
                 class="form-control"
                 name="age"
                 rows="1"
-                placeholder="age between 18 to 64"
+                placeholder="age between 18 and 64"
               ></textarea>
-
+              <br>
               <select
                 aria-placeholder="select"
                 class="form-control"
                 id="sex"
                 name="sex"
                 required="1"
-              > <option value="None">Sex</option>
+              > 
+              <option hidden selected>Sex</option>
                 {% for type in sex %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
               </select>
-
+              <br>
               <textarea
                 class="form-control"
                 name="bmi"
                 rows="1"
                 placeholder="Enter BMI"
               ></textarea>
-
+              <br>
               <textarea
                 class="form-control"
                 name="children"
                 rows="1"
-                placeholder="how many children you have?"
+                placeholder="Enter how many children?"
               ></textarea>
-
+              <br>
               <select
                 aria-placeholder="select"
                 class="form-control"
                 id="smoker"
                 name="smoker"
-                required="1"> 
-                <option value="None">Smoking</option>
+                required="1"
+              >
+              <option hidden selected>Smoking</option>
                 {% for type in smoker %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
               </select>
-
+                <br>
               <select
                 aria-placeholder="select"
                 class="form-control"
                 id="region"
                 name="region"
                 required="1"
-              > <option value="None">Region</option>
+              >
+              <option hidden selected>Select Region</option>
                 {% for type in region %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
@@ -133,7 +138,8 @@ Insurance Premium Detection
             <button type="submit" class="btn btn-primary mb-2">Predict</button
             ><br />
           </form>
-          <!-- Translated text returned by the Translate API is rendered here. -->
+          <!--
+             Translated text returned by the Translate API is rendered here. -->
         </div>
         <div class="col">
           <form>
